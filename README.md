@@ -1,4 +1,4 @@
-# Anti Reels - Lock in
+# LockedSkeletons
 
 Eye tracker that plays a skeleton banging a shield when you look away from the screen so you lock in instead of scrolling or falling asleep
 
