@@ -1,6 +1,6 @@
 # Anti Reels - Lock in
 
-Eye detection app that plays UCLA's John Wooden's motivational videos when you look away from the screen so you lock in and don't scroll or fall asleep
+Eye tracker that plays a skeleton banging a shield when you look away from the screen so you lock in instead of scrolling or falling asleep
 
 ## Setup Instructions
 
