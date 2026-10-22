@@ -1,0 +1,17 @@
+name: tend
+on:
+  push:
+    branches: ["main"]
+    paths: [.github/workflows/tend.yml]
+  schedule: [{cron: "17 6 * * 1"}]
+  workflow_dispatch:
+permissions: {contents: write, pull-requests: write}
+concurrency: {group: tend, cancel-in-progress: false}
+jobs:
+  tend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with: {persist-credentials: false}
+      - uses: mohsensc/tend-cli@v1
+        with: {model-key: "${{ secrets.TEND_MODEL_KEY }}"}
